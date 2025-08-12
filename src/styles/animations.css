@@ -1,0 +1,432 @@
+/* Custom animations for NoorVia BD */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(-10px) rotate(240deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+}
+
+@keyframes countdown-flip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+/* Construction Animation Keyframes */
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes crane-arm {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes crane-hook {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes sign-swing {
+  0%, 100% {
+    transform: translateX(-50%) rotate(1deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-1deg);
+  }
+}
+
+@keyframes worker-hammer {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes hammer-swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes worker-walk {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes walk-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes walk-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes worker-point {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes point-arm {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes worker-wave {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes wave-arm {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes tool-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(10deg);
+  }
+}
+
+@keyframes tool-float-delayed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(-5deg);
+  }
+}
+
+@keyframes dust-cloud {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes dust-cloud-delayed {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes spark {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes spark-delayed {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+/* Apply animations */
+.animate-float {
+  animation: float 20s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-scale-in {
+  animation: scale-in 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.countdown-flip {
+  animation: countdown-flip 0.6s ease-in-out;
+}
+
+/* Construction Animations */
+.animate-sway {
+  animation: sway 4s ease-in-out infinite;
+}
+
+.animate-crane-arm {
+  animation: crane-arm 6s ease-in-out infinite;
+}
+
+.animate-crane-hook {
+  animation: crane-hook 3s ease-in-out infinite;
+}
+
+.animate-sign-swing {
+  animation: sign-swing 3s ease-in-out infinite;
+}
+
+.animate-worker-hammer {
+  animation: worker-hammer 1s ease-in-out infinite;
+}
+
+.animate-hammer-swing {
+  animation: hammer-swing 1s ease-in-out infinite;
+}
+
+.animate-worker-walk {
+  animation: worker-walk 2s ease-in-out infinite;
+}
+
+.animate-walk-left {
+  animation: walk-left 2s ease-in-out infinite;
+}
+
+.animate-walk-right {
+  animation: walk-right 2s ease-in-out infinite 0.5s;
+}
+
+.animate-worker-point {
+  animation: worker-point 3s ease-in-out infinite;
+}
+
+.animate-point-arm {
+  animation: point-arm 2s ease-in-out infinite;
+}
+
+.animate-worker-wave {
+  animation: worker-wave 2s ease-in-out infinite;
+}
+
+.animate-wave-arm {
+  animation: wave-arm 1.5s ease-in-out infinite;
+}
+
+.animate-tool-float {
+  animation: tool-float 4s ease-in-out infinite;
+}
+
+.animate-tool-float-delayed {
+  animation: tool-float-delayed 4s ease-in-out infinite 1s;
+}
+
+.animate-dust-cloud {
+  animation: dust-cloud 3s ease-in-out infinite;
+}
+
+.animate-dust-cloud-delayed {
+  animation: dust-cloud-delayed 3s ease-in-out infinite 1.5s;
+}
+
+.animate-spark {
+  animation: spark 2s ease-in-out infinite;
+}
+
+.animate-spark-delayed {
+  animation: spark-delayed 2s ease-in-out infinite 0.5s;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animate-float {
+    animation-duration: 15s;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.7);
+}
